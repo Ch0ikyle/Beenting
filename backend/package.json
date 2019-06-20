@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "joi": "^14.3.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mariadb": "^2.0.5",
+    "nodemon": "^1.19.1",
+    "sequelize": "^5.8.10",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "cross-env NODE_PATH=src babel-node src/index.js",
+    "dev": "cross-env NODE_PATH=src nodemon --exec babel-node src/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
