@@ -1,17 +1,20 @@
 export const Room = (sequelize, DataTypes) => {
     return sequelize.define('Room', {
-        RoomCode : {
+        roomCode : {
             type : DataTypes.STRING(5),
             primaryKey : true,
             allowNull : false
         },
-        RoomName : {
+        roomName : {
             type : DataTypes.STRING(50),
             allowNull : false
         },
-        RoomMember : {
+        roomMember : {
             type : DataTypes.STRING(5),
             primaryKey : true
+        },
+        isLeader : {
+            type : DataTypes.BOOLEAN
         }
     });
 };

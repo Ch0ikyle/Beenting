@@ -11,7 +11,7 @@ export const User = (sequelize, DataTypes) => {
             unique : true
         },
         password : {
-            type : DataTypes.TEXT,
+            type : DataTypes.STRING,
             allowNull : false
         },
         auth : {
@@ -23,6 +23,10 @@ export const User = (sequelize, DataTypes) => {
         name : {
             type : DataTypes.STRING(50),
             allowNull : false
+        },
+        description : {
+            type : DataTypes.TEXT,
+            allowNull : true
         }
     });
 };
