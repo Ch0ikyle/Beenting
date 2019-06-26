@@ -2,6 +2,7 @@ import Sequelize from 'sequelize';
 import path from 'path';
 
 import { User } from './User';
+import { Room } from './Room';
 
 const config = require(path.join(__dirname, '..', 'config', 'dbconfig.json'))['beenting'];
 
@@ -13,5 +14,6 @@ const sequelize = new Sequelize(
 )
 
 const user = User(sequelize, Sequelize);
+const room = Room(sequelize, Sequelize);
 
-export { sequelize, Sequelize, user };  
+export { sequelize, Sequelize, user, room };
