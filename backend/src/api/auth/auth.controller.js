@@ -190,6 +190,7 @@ export const Login = async (ctx) => {
     }
 
     const payload = {
+        userCode : founded[0].userCode,
         name : founded[0].name,
         auth : founded[0].auth
     };
