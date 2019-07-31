@@ -1,10 +1,6 @@
 <template>
   <div class="hello">
     <div id = "text_box">
-      <label for = "number">학번</label><br>
-      <input type="text" id ="number" name = "number"/><br>
-      <label for = "name">이름</label><br>
-      <input type="text" id ="name" name = "name"/><br>
       <label for = "id">아이디</label><br>
       <input type="text" id ="id" name = "id"/><br>
       <label for = "pw">비밀번호</label><br>
@@ -12,23 +8,12 @@
       <label for = "pwcheck">비밀번호 확인</label><br>
       <input type="password" id ="pwcheck" name = "pwcheck"/><br>
     </div>
-    <div id = "yes_no">
-      <p>
-        <span id = "no">
-          취소
-        </span>
-        <span id = "yes">
-          확인
-        </span>
-      </p>
-    </div>
   </div>
-
 </template>
 
 <script>
 export default {
-  name: 'studentLogin',
+  name: 'teachterLogin',
   props: {
     msg: String
   }
@@ -46,16 +31,12 @@ export default {
   border: 5px solid black;
   margin-bottom: 30px;
 }
-
-label, #yes_no{
+label{
   font-size: 22px;
   font-weight: bolder;
 }
 label{
   text-align: left;
 }
-#yes_no{
-  text-align: center;
-  word-spacing : 100px;
-}
+
 </style>

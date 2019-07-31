@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import login from './views/login.vue'
 
 Vue.use(Router)
 
@@ -10,8 +10,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/studentLogin',
+      name: 'studentLogin',
+      component: () => import('./views/studentLogin.vue')
+    },
+    {
+      path: '/Chating',
+      name: 'Chating',
+      component: () => import('./views/Chating.vue')
+    },
+    {
+      path: '/ChatList',
+      name: 'ChatList',
+      component: () => import('./views/ChatList.vue')
     }
   ]
 })
